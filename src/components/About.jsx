@@ -52,18 +52,25 @@ const About = () => {
         variants={fadeIn("", "", 0.2, 1)}
         className='flex items-center'
       >
-        <div className='mt-5 w-12 h-12 rounded-full flex cursor-pointer'>
+        <div className='mt-5 w-13 h-12 rounded-full flex'>
           <img
-            className='mr-4'
+            className='mr-4 cursor-pointer'
             onClick={() => window.open("http://github.com/al-zivkovic", "_blank")}
             src={github}
             alt='github'
           />
           <img
+            className='mr-5 cursor-pointer'
             onClick={() => window.open("https://www.linkedin.com/in/aleksandar-zivkovic-04bb2620b/", "_blank")}
             src={linkedin}
             alt='linkedin'
           />
+          <button
+            className='bg-purple-500 text-white px-4 py-2 rounded-md cursor-pointer hover:bg-purple-800 transition-all duration-300 ease-in-out'
+            onClick={() => window.open("/public/AleksandarZivkovic-Resume.pdf", "_blank")}
+          >
+            Download CV
+          </button>
         </div>
       </motion.div>
 
