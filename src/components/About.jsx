@@ -30,6 +30,23 @@ const ServiceCard = ({ index, title, icon }) => {
   )
 }
 
+const downloadCV = () => {
+  const cvFilePath = "/public/AleksandarZivkovic-Resume.pdf";
+
+  fetch(cvFilePath)
+    .then(response => response.blob())
+    .then(blob => {
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = cvFilePath.split('/').pop();
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    })
+    .catch(error => console.error('Error downloading CV:', error));
+}
+
 const About = () => {
   return (
     <>
@@ -67,7 +84,7 @@ const About = () => {
           />
           <button
             className='bg-purple-500 text-white px-4 py-2 rounded-md cursor-pointer hover:bg-purple-800 transition-all duration-300 ease-in-out'
-            onClick={() => window.open("/public/AleksandarZivkovic-Resume.pdf", "_blank")}
+            onClick={() => downloadCV()}
           >
             Download CV
           </button>
