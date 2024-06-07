@@ -2,7 +2,7 @@ import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
-import { services } from '../constants';
+import { services, about } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 import { github, linkedin } from '../assets';
@@ -59,10 +59,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-6xl leading-[30px]'
       >
-        I am a skilled software developer based in Canada, with a passion for building software that improves the lives of those around me.
-        I have a strong foundation in web development, and I am always looking to expand my skillset and learn new technologies.
-        I recently graduated from an accelerated computer science program from the British Columbia Institute of Technology,
-        and I am seeking opportunities to work with a team of talented developers to build amazing software.
+        {about.english_description}
       </motion.p>
 
       <motion.div
