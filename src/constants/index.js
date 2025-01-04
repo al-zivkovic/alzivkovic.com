@@ -20,6 +20,7 @@ import {
     instaclone,
     discordbot,
     threejs,
+    calvision,
   } from "../assets";
   
 export const navLinks = [
@@ -173,6 +174,27 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "CalVision",
+    description: "Developed an iOS app using React Native and Expo Go that allows users to track their caloric intake and progress towards their fitness goals. The app features an AI image recognition system that can identify food items and their caloric content.",
+    tags: [
+      {
+        name: "React Native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Expo Go",
+        color: "green-text-gradient",
+      },
+      {
+        name: "AI",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: calvision,
+    deployed_link: "https://calvision.app/",
+    source_code_link: "https://github.com/al-zivkovic/"
+  },
   {
     name: "Social Media App (Instagram Clone)",
     description: "Developed a Full Stack Social Media Application using React, TypeScript, and Tailwind CSS. The application allows users to create an account, post images, like and edit posts, and edit their profile.",

@@ -28,6 +28,7 @@ import ncu from "./company/ncu.png";
 
 import instaclone from "./instaclone.png";
 import discordbot from "./discordbot.png";
+import calvision from "./calvision.png";
 
 export {
   logo,
@@ -56,4 +57,5 @@ export {
   ncu,
   instaclone,
   discordbot,
+  calvision,
 };
