@@ -21,6 +21,7 @@ import {
     discordbot,
     threejs,
     calvision,
+    iluminai,
   } from "../assets";
   
 export const navLinks = [
@@ -154,12 +155,27 @@ const experiences = [
     iconBg: "#FFFFFF",
     date: "September 2022 - May 2023",
     points: [
-      "Developing a website using Python and Django, designed to apply advanced image filtering to x-ray images of horse bones to assist veterinary students in their studies.",
+      "Developed a website using Python and Django, designed to apply advanced image filtering to x-ray images of horse bones to assist veterinary students in their studies.",
       "Enhanced user experience by implementing a responsive design and optimizing site performance.",
       "Led a team of developers by assigning tasks and providing guidance to team members, resulting in an increase in productivity and conducted weekly code reviews and meetings to ensure project success.",
       "Deployed the web application's client and server to a cloud-based server using Amazon Web Services, ensuring 99.9% uptime and optimal performance.",
     ],
   },
+  {
+    title: "Customer Support Specialist",
+    company_name: "Iluminai Intelligence Coorporation",
+    icon: iluminai,
+    iconBg: "#FFFFFF",
+    date: "October 2024 - Present",
+    points: [
+      "Developed SQL queries to optimize database performance and retrieve important data for the company's clients.",
+      "Generated complex reports using SQL to provide insights into the company's growth and performance.",
+      "Created, designed and managed a support knowledge base using HelpScout to provide clients with self-service support options.",
+      "Provided technical support to clients via email and phone to resolve issues and answer questions.",
+      "Managed the GitHub Wiki and documentation to ensure that all information was up-to-date and accessible to the team.",
+      "Using Elixir and gettext, contributed to I18N and L10N efforts by translating the app to French, increasing the company's reach to the French-speaking market.",
+    ]
+  }
 ];
 
 const testimonials = [
@@ -176,18 +192,22 @@ const testimonials = [
 const projects = [
   {
     name: "CalVision",
-    description: "Developed an iOS app using React Native and Expo Go that allows users to track their caloric intake and progress towards their fitness goals. The app features an AI image recognition system that can identify food items and their caloric content.",
+    description: "Developed an iOS app using React Native, Expo and Elixir that allows users to track their caloric intake and progress towards their fitness goals. The app features an AI image recognition system that can identify food items and their caloric content.",
     tags: [
       {
         name: "React Native",
         color: "blue-text-gradient",
       },
       {
-        name: "Expo Go",
+        name: "Expo",
         color: "green-text-gradient",
       },
       {
-        name: "AI",
+        name: "Elixir",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "OpenAI",
         color: "pink-text-gradient",
       },
     ],

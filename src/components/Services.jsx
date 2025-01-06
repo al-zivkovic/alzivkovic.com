@@ -18,10 +18,6 @@ const Services = () => {
       >
         I am available for freelance work and I offer a wide range of services.
         <br />
-        <br />
-        I am willing to help you with your project, no matter how big or small it is.
-        <br />
-        <br />
         Please feel free to contact me for a quote or to discuss your project.
       </motion.p>
     </>

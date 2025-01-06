@@ -25,6 +25,7 @@ import aws from "./tech/aws.png";
 
 import acebc from "./company/acebc.png";
 import ncu from "./company/ncu.png";
+import iluminai from "./company/iluminai.png";
 
 import instaclone from "./instaclone.png";
 import discordbot from "./discordbot.png";
@@ -58,4 +59,5 @@ export {
   instaclone,
   discordbot,
   calvision,
+  iluminai,
 };
